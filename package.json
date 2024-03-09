@@ -1,0 +1,40 @@
+{
+  "name": "ens_contracts",
+  "version": "1.0.0",
+  "description": "A ens contracts folder for custom TLD",
+  "scripts": {
+    "test": "hardhat test",
+    "deploy": "npx hardhat deploy sripts/deploy.js --network hardhat",
+    "verify": "hardhat verify --network goerli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nish0483/custom-ENS-TLD.git"
+  },
+  "author": "Nish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nish0483/custom-ENS-TLD.git"
+  },
+  "homepage": "https://github.com/Nish0483/custom-ENS-TLD.git",
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "chai": "^4.3.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.5",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2"
+  },
+  "dependencies": {
+    "@ensdomains/ens": "^0.6.2",
+    "@ensdomains/ens-contracts": "^1.1.4",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
