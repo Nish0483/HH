@@ -43,7 +43,7 @@ Follow these steps to get your custom ENS TLD
 
 6. Deploy
    
-   ```bash
+   ```cmd
    npm hardhat deploy --network goerli
 
 ## contracts
@@ -97,7 +97,7 @@ TXT @ _ens a=<eth-address>
 
 There is no ENS protocol fee to import a DNS name, but it requires a large amount of gas (up to a few million !!!) to submit the proof onchain. Continue reading to learn how this has been mitigated.
   
-### Claiming off chain :
+### claiming off chain :
   
 EP5.1 introduced a new DNSSECOracle and DNSRegistrar which makes it possible to perform DNSSEC verification at query time, enabling truly free usage of DNS names in ENS. We call this "gasless DNSSEC".
 
@@ -105,7 +105,7 @@ It works by enabling wildcard resolution at the DNS TLD level. During the name r
 
 To configure a DNS name for usage in ENS, simply add a TXT record with the following format:
 
-~~~
+~~~solidity
 TXT @ ENS1 <resolver-address>
 ~~~
 
