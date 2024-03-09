@@ -125,7 +125,7 @@ DNS records are entries within the DNS database that provide information about a
 4. TXT Record:
 A TXT (Text) record is a type of DNS record that allows domain owners to associate arbitrary text with a domain. It's commonly used for various purposes, and verification of domain is one of it like in our case
 
-*** FAQ : How to get/ edit TXT ?
+#### *** FAQ : How to get/ edit TXT ?
 
 TXT is part of DNS domain record. Inorder to get that u need to own a domain first. You can use paid or free providers for testing. In either case the platform should support DNSSEC security.After getting domain you need to go to its control panel in which domain setting are available. A zone file/ UI setup will be availble which contain all the record as explained above . And thats where we add/edit the TXT field accordingly 
 
