@@ -92,7 +92,7 @@ DNSSEC ensures the integrity and authenticity of DNS data associated with a doma
 5. DNS Registrar : 0x2F0A47e43877Be7fEb376fE3fC628681d0959cF1
 
 
-## claiming process 
+## Claiming process 
 
 Running the deploy.js in scripts folder  in hardhat will deploy necessory contracts
 
