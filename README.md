@@ -32,7 +32,8 @@ Follow these steps to get your custom ENS TLD
    API_KEY=https://goerli.infura.io/v3/<ur infura api key>
 
 5. compile contracts
-```npx hardhat compile
+``` npx hardhat compile
+```
 
 6. Deploy
 ```npm hardhat deploy --network goerli
