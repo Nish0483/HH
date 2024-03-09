@@ -47,5 +47,33 @@ Follow these steps to get your custom ENS TLD
    npm hardhat deploy --network goerli
 
 ## contracts
-* ENSRegistery : 
+
+* ENSRegistry:
+
+The ENSRegistry contract is the core contract managing the ENS system.
+It maintains a mapping between domain names (represented as Ethereum hashes) and their corresponding owners.
+It also handles the assignment of subdomains to different owners.
+
+* Resolver:
+
+The Resolver contract is associated with each domain registered in the ENS system.
+It contains information about the domain, such as the address associated with the domain (e.g., an Ethereum address).
+Users can interact with the Resolver to update or retrieve information linked to a specific domain.
+
+*Registrar:
+
+The Registrar contract manages the registration of new domains within the ENS system.
+It ensures that users can claim ownership of a domain name by following a specific registration process.
+The Registrar contract may have additional features like handling the release of expired domains or managing the auction process for premium names.
+
+* PublicSuffixList:
+
+The PublicSuffixList is often an external contract or library used to validate domain names and ensure they conform to public suffix rules.
+It helps prevent certain types of attacks and ensures that users cannot claim certain reserved or high-level domains.
+
+*DNSSEC (Domain Name System Security Extensions):
+
+DNSSEC is a set of extensions to DNS that adds an additional layer of security to the domain name system.
+In the context of ENS, a DNSSEC oracle contract may be used to verify DNSSEC proofs provided during the domain claiming process.
+DNSSEC ensures the integrity and authenticity of DNS data associated with a domain.
 
