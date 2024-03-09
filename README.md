@@ -85,11 +85,11 @@ DNSSEC ensures the integrity and authenticity of DNS data associated with a doma
 
 #### sample deployment address in goerli 
 
-1. ensRegistry : 0xBde345E46BD6E069c59A1Af6730854e54A9B60e6
-2. custom resolver : 0x780030179dCF446D8307e13D8a73f9443E478C94
-3. SuffixList: 0x431287da921Da5AFfC7C3887415A69e76094E050
-4. DNSSEC impl : 0x6d6944E3C9D9f1eFe90A5a4594F2B63E5d6D686a
-5. DNS Registrar : 0x2F0A47e43877Be7fEb376fE3fC628681d0959cF1
+1. ensRegistry :     https://goerli.etherscan.io/address/0xBde345E46BD6E069c59A1Af6730854e54A9B60e6
+2. custom resolver : https://goerli.etherscan.io/address/0x780030179dCF446D8307e13D8a73f9443E478C94
+3. SuffixList:       https://goerli.etherscan.io/address/0x431287da921Da5AFfC7C3887415A69e76094E050
+4. DNSSEC impl :     https://goerli.etherscan.io/address/0x6d6944E3C9D9f1eFe90A5a4594F2B63E5d6D686a
+5. DNS Registrar :   https://goerli.etherscan.io/address/0x2F0A47e43877Be7fEb376fE3fC628681d0959cF1
 
 
 ## Claiming process 
