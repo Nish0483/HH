@@ -77,7 +77,7 @@ DNSSEC is a set of extensions to DNS that adds an additional layer of security t
 In the context of ENS, a DNSSEC oracle contract may be used to verify DNSSEC proofs provided during the domain claiming process.
 DNSSEC ensures the integrity and authenticity of DNS data associated with a domain.
 
-- More deails of contracts and calling of their specif functions are explained in  [deploy.js](https://github.com/Nish0483/custom-ENS-TLD/blob/main/scripts/deploy.js)
+- More deails of contracts deployment order , and calling of their specif functions are explained in  [deploy.js](https://github.com/Nish0483/custom-ENS-TLD/blob/main/scripts/deploy.js)
 
 
 ## claiming process 
@@ -107,6 +107,20 @@ To configure a DNS name for usage in ENS, simply add a TXT record with the follo
 ~~~
 TXT @ ENS1 <resolver-address>
 ~~~
+
+This are steps explained in ENS documentation . And here are the key points
+
+** FAQ : what is TXT and how to get/ edit it ?
+
+1. DNS (Domain Name System):
+The Domain Name System (DNS) is a decentralized hierarchical system that translates human-readable domain names (like www.example.com) into IP addresses that machines on the internet use to identify each other. DNS plays a crucial role in enabling users to access websites using domain names rather than IP addresses.
+
+2. DNS Record:
+DNS records are entries within the DNS database that provide information about a domain. Each record has a specific type and purpose. Common types of DNS records include A (IPv4 address), AAAA (IPv6 address), CNAME (canonical name), MX (mail exchange), TXT (text), and more.
+
+3. TXT Record:
+A TXT (Text) record is a type of DNS record that allows domain owners to associate arbitrary text with a domain. It's commonly used for various purposes, such as:
+
 
 ## Read more
 - https://makoto-inoue.medium.com/step-by-step-guide-of-how-to-claim-your-dns-domain-on-ens-60a2d2dcbe6e
