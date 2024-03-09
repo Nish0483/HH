@@ -79,8 +79,10 @@ DNSSEC ensures the integrity and authenticity of DNS data associated with a doma
 
 ## claiming process 
 
-### Running the deploy.js in scripts folder  in hardhat will deploy necessory contracts
-- claiming onchain : the DNSRegistrar contract can help with claiming of DNS domain in ENS
+* Running the deploy.js in scripts folder  in hardhat will deploy necessory contracts
+- claiming onchain :
+
+  the DNSRegistrar contract can help with claiming of DNS domain in ENS
   Since 2021, it has been possible to import a DNS name and use that as an ENS name. This process involves enabling DNSSEC, setting a specific TXT record, and submitting a proof to the DNSRegistrar smart contract.
 
 Expect your TXT record to look something like this:
@@ -91,7 +93,8 @@ TXT @ _ens a=<eth-address>
 
 There is no ENS protocol fee to import a DNS name, but it requires a large amount of gas (up to a few million !!!) to submit the proof onchain. Continue reading to learn how this has been mitigated.
   
-- Claiming off chain
+- Claiming off chain :
+  
   EP5.1 introduced a new DNSSECOracle and DNSRegistrar which makes it possible to perform DNSSEC verification at query time, enabling truly free usage of DNS names in ENS. We call this "gasless DNSSEC".
 
 It works by enabling wildcard resolution at the DNS TLD level. During the name resolution process, if a name doesn't already exist onchain but has been configured for usage in ENS, the DNSSEC proof will be fetched offchain via CCIP Read and then verified onchain with the same DNSSECOracle mentioned above.
@@ -105,3 +108,4 @@ TXT @ ENS1 <resolver-address>
 ## Read more
 - https://makoto-inoue.medium.com/step-by-step-guide-of-how-to-claim-your-dns-domain-on-ens-60a2d2dcbe6e
 - https://discuss.ens.domains/t/gasless-offchain-for-dns-and-ens-via-theoffchainresolver/18783
+- https://docs.ens.domains/registry/dns
