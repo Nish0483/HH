@@ -116,11 +116,14 @@ This are steps explained in ENS documentation . And here are the key points
 1. DNS (Domain Name System):
 The Domain Name System (DNS) is a decentralized hierarchical system that translates human-readable domain names (like www.example.com) into IP addresses that machines on the internet use to identify each other. DNS plays a crucial role in enabling users to access websites using domain names rather than IP addresses.
 
-2. DNS Record:
+2. ENS :
+ENS stands for Ethereum Name Service. It is a decentralized domain name system built on the Ethereum blockchain. ENS allows users to register and manage domain names ending in ".eth" or custom top level domain like our case using DNS
+
+3. DNS Record:
 DNS records are entries within the DNS database that provide information about a domain. Each record has a specific type and purpose. Common types of DNS records include A (IPv4 address), AAAA (IPv6 address), CNAME (canonical name), MX (mail exchange), TXT (text), and more.
 
-3. TXT Record:
-A TXT (Text) record is a type of DNS record that allows domain owners to associate arbitrary text with a domain. It's commonly used for various purposes, such as:
+4. TXT Record:
+A TXT (Text) record is a type of DNS record that allows domain owners to associate arbitrary text with a domain. It's commonly used for various purposes, and verification of domain is one of it like in our case
 
 
 ## Read more
