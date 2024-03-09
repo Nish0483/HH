@@ -2,14 +2,17 @@
 
 This project is for creating a custom TLD like "example.nish" in using Ethereum Name Service ENS . Creating a custom domain rather than "example.eth" involves usage of DNS domains in accordance with ENS contracts
 
+
 ## Getting Started
 
 Follow these steps to get your custom ENS TLD 
+
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed
 - Ethereum wallet with sufficient funds for transactions (goerli used here)
+
 
 ### Installation
 
@@ -46,6 +49,7 @@ Follow these steps to get your custom ENS TLD
    ```cmd
    npm hardhat deploy --network goerli
 
+
 ## contracts
 
 * ENSRegistry:
@@ -80,9 +84,11 @@ DNSSEC ensures the integrity and authenticity of DNS data associated with a doma
 - More deails of contracts deployment order , and calling of their specific functions are explained in  [deploy.js](https://github.com/Nish0483/custom-ENS-TLD/blob/main/scripts/deploy.js)
 
 
+
 ## claiming process 
 
 Running the deploy.js in scripts folder  in hardhat will deploy necessory contracts
+
 
 ### claiming onchain :
 
@@ -96,6 +102,7 @@ TXT @ _ens a=<eth-address>
 ~~~
 
 There is no ENS protocol fee to import a DNS name, but it requires a large amount of gas (up to a few million !!!) to submit the proof onchain. Continue reading to learn how this has been mitigated.
+
   
 ### claiming off chain :
   
@@ -125,9 +132,11 @@ DNS records are entries within the DNS database that provide information about a
 4. TXT Record:
 A TXT (Text) record is a type of DNS record that allows domain owners to associate arbitrary text with a domain. It's commonly used for various purposes, and verification of domain is one of it like in our case
 
+
 #### *** FAQ : How to get/ edit TXT ?
 
 TXT is part of DNS domain record. Inorder to get that u need to own a domain first. You can use paid or free providers for testing. In either case the platform should support DNSSEC security.After getting domain you need to go to its control panel in which domain setting are available. A zone file/ UI setup will be availble which contain all the record as explained above . And thats where we add/edit the TXT field accordingly 
+
 
 
 ## Read more
