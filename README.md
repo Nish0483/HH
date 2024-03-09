@@ -19,23 +19,31 @@ Follow these steps to get your custom ENS TLD
    git clone https://github.com/your-username/custom-ens-tld.git
 
 2. Navigate to the project directory:
-```cd custom-ens-tld
+ 
+   ```bash
+   cd custom-ens-tld
 
    
 3. install dependencies
+
    ```bash
    npm install
 
 4. Create a .env file in root folder with
-   ```bash
+
+    ```bash
    PRIVATE_KEY=<your wallet pvt key>
    API_KEY=https://goerli.infura.io/v3/<ur infura api key>
 
-5. compile contracts
-``` npx hardhat compile
-```
+6. compile contracts
+   
+   ```bash
+    npx hardhat compile
+
 
 6. Deploy
-```npm hardhat deploy --network goerli
+   
+   ```bash
+   npm hardhat deploy --network goerli
 
 
