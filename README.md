@@ -77,6 +77,9 @@ DNSSEC is a set of extensions to DNS that adds an additional layer of security t
 In the context of ENS, a DNSSEC oracle contract may be used to verify DNSSEC proofs provided during the domain claiming process.
 DNSSEC ensures the integrity and authenticity of DNS data associated with a domain.
 
+- More deails of contracts and calling of their specif functions are explained in  [Link to File](./sripts/deploy.js)
+
+
 ## claiming process 
 
 * Running the deploy.js in scripts folder  in hardhat will deploy necessory contracts
