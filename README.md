@@ -74,7 +74,7 @@ It helps prevent certain types of attacks and ensures that users cannot claim ce
 * DNSSEC (Domain Name System Security Extensions):
 
 DNSSEC is a set of extensions to DNS that adds an additional layer of security to the domain name system.
-In the context of ENS, a DNSSEC oracle contract may be used to verify DNSSEC proofs provided during the domain claiming process.
+In the context of ENS, a 'DNSSEC oracle contract' may be used to verify DNSSEC proofs provided during the domain claiming process.
 DNSSEC ensures the integrity and authenticity of DNS data associated with a domain.
 
 - More deails of contracts deployment order , and calling of their specific functions are explained in  [deploy.js](https://github.com/Nish0483/custom-ENS-TLD/blob/main/scripts/deploy.js)
@@ -109,10 +109,10 @@ To configure a DNS name for usage in ENS, simply add a TXT record with the follo
 TXT @ ENS1 <resolver-address>
 ~~~
 
-This are steps explained in ENS documentation . And here are the key points
+And here are the key points >>>
 
-** FAQ : what is TXT and how to get/ edit it ?
 
+```
 1. DNS (Domain Name System):
 The Domain Name System (DNS) is a decentralized hierarchical system that translates human-readable domain names (like www.example.com) into IP addresses that machines on the internet use to identify each other. DNS plays a crucial role in enabling users to access websites using domain names rather than IP addresses.
 
@@ -125,6 +125,10 @@ DNS records are entries within the DNS database that provide information about a
 4. TXT Record:
 A TXT (Text) record is a type of DNS record that allows domain owners to associate arbitrary text with a domain. It's commonly used for various purposes, and verification of domain is one of it like in our case
 
+** FAQ : How to get/ edit TXT ?
+
+TXT is part of DNS domain record. Inorder to get that u need to own a domain first. You can use paid or free providers for testing. In either case the platform should support DNSSEC security.After getting domain you need to go to its control panel in which domain setting are available. A zone file/ UI setup will be availble which contain all the record as explained above . And thats where we add/edit the TXT field accordingly 
+```
 
 ## Read more
 - https://makoto-inoue.medium.com/step-by-step-guide-of-how-to-claim-your-dns-domain-on-ens-60a2d2dcbe6e
