@@ -77,6 +77,14 @@ DNSSEC is a set of extensions to DNS that adds an additional layer of security t
 In the context of ENS, a DNSSEC oracle contract may be used to verify DNSSEC proofs provided during the domain claiming process.
 DNSSEC ensures the integrity and authenticity of DNS data associated with a domain.
 
+## claiming process 
+
+- Running the deploy.js in scripts folder  in hardhat will deploy necessory contracts
+- claiming onchain : the DNSRegistrar contract can help with claiming of DNS domain in ENS
+  
+
+
 
 ## Read more
-$ https://makoto-inoue.medium.com/step-by-step-guide-of-how-to-claim-your-dns-domain-on-ens-60a2d2dcbe6e
+- https://makoto-inoue.medium.com/step-by-step-guide-of-how-to-claim-your-dns-domain-on-ens-60a2d2dcbe6e
+- https://discuss.ens.domains/t/gasless-offchain-for-dns-and-ens-via-theoffchainresolver/18783
