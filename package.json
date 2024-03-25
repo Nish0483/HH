@@ -1,7 +1,7 @@
 {
-  "name": "ens_contracts",
+  "name": "test",
   "version": "1.0.0",
-  "description": "A ens contracts folder for custom TLD",
+  "description": "test deloyment",
   "scripts": {
     "test": "hardhat test",
     "deploy": "npx hardhat deploy sripts/deploy.js --network hardhat",
@@ -9,14 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nish0483/custom-ENS-TLD.git"
+    "url": ""
   },
   "author": "Nish",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Nish0483/custom-ENS-TLD.git"
-  },
-  "homepage": "https://github.com/Nish0483/custom-ENS-TLD.git",
+  "bugs": {},
+  "homepage": "",
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
@@ -32,8 +30,6 @@
     "solidity-coverage": "^0.8.2"
   },
   "dependencies": {
-    "@ensdomains/ens": "^0.6.2",
-    "@ensdomains/ens-contracts": "^1.1.4",
     "@openzeppelin/contracts": "^5.0.2",
     "dotenv": "^16.4.5"
   }

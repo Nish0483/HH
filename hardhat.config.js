@@ -2,11 +2,11 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("@nomiclabs/hardhat-ethers");
 
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const API_KEY = process.env.API_KEY;
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const API_KEY = process.env.API_KEY
 
 module.exports = {
   solidity: {
@@ -55,7 +55,7 @@ module.exports = {
 
     
    hardhat:{},
-   goerli:{
+   mumbai:{
     url:API_KEY,
     accounts:[PRIVATE_KEY]
    },
@@ -64,10 +64,12 @@ module.exports = {
 
   },
 
+
   etherscan: {
     url: "https://api-goerli.etherscan.io/api",
     apiKey: {
       goerli: "UNSPPQV7EXNJE8MK4RE4JJ7JQ3HIVWWCXC",
+      mumbai: "UNSPPQV7EXNJE8MK4RE4JJ7JQ3HIVWWCXC"
     }
    },
 
